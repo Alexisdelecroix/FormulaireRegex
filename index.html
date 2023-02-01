@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Regex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <h1>Formulaire d'inscription</h1>
+
+
+    <form action="" id="validations">
+        <fieldset>
+            <legend>Tous les champs sont obligatoires</legend>
+
+            <label for="nom"> Nom : <span>*</span></label> <br>
+            <input type="text" name="nom" id="nom" placeholder="Votre nom"> <br> 
+            <span id="errorNom" class="error"></span> <br>
+
+
+            <label for="prenom"> Prénom : <span>*</span></label> <br>
+            <input type="text" name="prenom" id="prenom" > <br> 
+            <span id="errorPrenom" class="error"></span> <br>
+
+            <label for="email"> Adresse e-mail : <span>*</span></label> <br>
+            <input type="email" name="email" id="email" required> <br>
+            
+
+            <label for="naissance"> Date de naissance : <span>*</span></label> <br>
+            <input type="date" name="naissance" id="naissance"  max="2005-01-01" required> <br>
+
+            <label for="password"> Votre mot de passe : <span>*</span></label> <br>
+            <input type="password" id="mdp"> <br>
+            <span id="errorMdp" class="error"></span> <br>
+
+            <label for="password2"> Confirmation de votre mot de passe : <span>*</span></label> <br>
+            <input type="password" id="mdp2" > <br>
+            <span id="errorMdp2" class="error"></span> <br>
+
+            <label for="">Accepter vous les <a>CGU ?</a></label>
+            <input type="checkbox" > <br> <br>
+
+
+            <input type="submit"> <input type="reset">
+        </fieldset>
+    </form>
+
+<script src="app.js"></script>
+</body>
+</html>
